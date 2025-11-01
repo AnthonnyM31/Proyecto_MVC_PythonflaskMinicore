@@ -3,7 +3,7 @@
 ## 👤 Información del Proyecto
 | Concepto | Detalle |
 | :--- | :--- |
-| **Desarrollador:** | Anthonny Mosquera |
+| **Desarrollador:** | Anthonny Mosquera y Juanjose Villalba|
 | **Universidad / Curso:** | UDLA / Ingeniería Web |
 | **Proyecto Base:** | Minicore - Sistema de Comisiones de Ventas Flask MVC |
 | **Link del Deploy (Render):** | **[PENDIENTE: Insertar URL Pública de Render aquí]** |
