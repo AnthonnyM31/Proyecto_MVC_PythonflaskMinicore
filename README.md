@@ -83,7 +83,6 @@ Este proyecto implicó la adaptación de un código base, enfrentando desafíos 
 | Desafío / Problema | Causa Raíz | Solución Aplicada | Lección Aprendida |
 | :--- | :--- | :--- | :--- |
 | **Errores de Comandos** | Sintaxis incorrecta de `mkdir` y `touch` en PowerShell, generando errores `PositionalParameterNotFound`. | Se optó por la **creación manual de carpetas/archivos** y el uso exclusivo de `pip install` en la terminal, minimizando errores. | La creación de proyectos debe ser robusta ante las idiosincrasias de la terminal (PowerShell vs. Bash). |
-| **CSS No Aplicado Localmente** | El archivo `styles.css` estaba incompleto, pues solo contenía el CSS del banner y omitía todo el código base (fondo, botones, tablas). | Se verificó la red (DevTools) y se restauró el **código CSS completo** del Minicore, asegurando que todos los estilos fundamentales estuvieran presentes. | Un estado HTTP `304 Not Modified` no siempre significa éxito si el contenido es parcial; el problema residía en la **integridad del archivo**. |
 | **Configuración para Render** | Necesidad de preparar el entorno para un servidor de producción (Gunicorn) y el puerto dinámico. | Se agregó `gunicorn` a `requirements.txt` y se creó el `Procfile` (`web: gunicorn app:app`). En `app.py`, se implementó `os.environ.get('PORT', 5000)`. | El *deploy* en la nube requiere comandos de inicio explícitos y manejo del puerto del host. |
 
 ### Conclusión
