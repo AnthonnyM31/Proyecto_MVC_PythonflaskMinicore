@@ -259,8 +259,8 @@ def obtener_vendedores():
 
 if __name__ == '__main__':
     # Inicializar base de datos
-    #init_db()
-    #cargar_datos_ejemplo() comentaremos estas 2 lineas por ahora a ver si el error 500 desaparece
+    init_db()
+    cargar_datos_ejemplo()
     
     # Ejecutar aplicación, usando el puerto dinámico de Render si está disponible
     port = int(os.environ.get('PORT', 5000))
